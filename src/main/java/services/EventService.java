@@ -9,5 +9,5 @@ public interface EventService {
 
     List<Event> getAllEvents();
 
-    Event getEventsById(Long id);
+    Event getEventById(Long id);
 }
