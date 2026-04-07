@@ -28,7 +28,7 @@ public class EventServiceImpl implements EventService{
 
     @Override
     public Event getEventsById(Long id) {
-        return eventRepository.findAllById(id)
+        return eventRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("The event with ID was not found: " + id));
     }
 }
